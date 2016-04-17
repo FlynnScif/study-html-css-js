@@ -1,0 +1,40 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>
+    今天中午吃什么
+</title>
+<script type="text/javascript">
+var names=new Array("夫妻肺片","香肠泡饭","串串","冷锅鱼","牛肉面","排骨面","猪肝面","西湖醋鱼","东坡肉","宋嫂鱼","莼菜汤","蟹黄小笼包","龙抄手","酸辣土豆丝"); 
+function showName(){ 
+    var index = Math.floor(Math.random()*names.length); 
+    var name = names[index]; 
+    document.getElementById("showView").innerHTML = name; 
+    idd=setTimeout("showName()",50); 
+} 
+var state = true; 
+var idd; 
+function sssss(){ 
+    if(state){ 
+        showName(); 
+        state = false; 
+    } 
+    else{ 
+        clearTimeout(idd); 
+        state = true; 
+    } 
+         
+}</script>
+
+<style type="text/css">
+.incentre{width:80%;height:10%;margin:0px auto;}
+</style>
+</head>
+
+<body>
+<div id="showView" class="incentre"></div>
+<p>
+ <div id="submitt" class="incentre">   <input onclick="sssss()" value="今天中午吃什么" type="button"/></div>
+</p>
+</body>
+</html>
