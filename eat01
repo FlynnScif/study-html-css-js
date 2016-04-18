@@ -1,11 +1,16 @@
-﻿<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html >
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>
     今天中午吃什么
 </title>
 <script type="text/javascript">
-var names=new Array("夫妻肺片","香肠泡饭","串串","冷锅鱼","牛肉面","排骨面","猪肝面","西湖醋鱼","东坡肉","宋嫂鱼","莼菜汤","蟹黄小笼包","龙抄手","酸辣土豆丝"); 
+var names=new Array("夫妻肺片","香肠泡饭","串串","冷锅鱼","牛肉面","排骨面","猪肝面","西湖醋
+
+鱼","东坡肉","宋嫂鱼","莼菜汤","蟹黄小笼包","龙抄手","酸辣土豆丝"); 
 function showName(){ 
     var index = Math.floor(Math.random()*names.length); 
     var name = names[index]; 
@@ -27,14 +32,25 @@ function sssss(){
 }</script>
 
 <style type="text/css">
-.incentre{width:80%;height:10%;margin:0px auto;}
+*{ margin:0; padding:0}
+.waikuan {width:100%; border:1px solid red; margin:0 auto; height:500px}
+.big { width:660px;margin:0 auto; border:1px solid green; height:400px;}
+.a{width:100px; height:25px; float:left; border:1px solid blue; margin:40% 0 auto 30% }
+.b{width:100px; height:25px; float:left; border:1px solid purple; margin:40% auto}
 </style>
 </head>
+<body style=" margin:0 auto">
 
-<body>
-<div id="showView" class="incentre"></div>
-<p>
- <div id="submitt" class="incentre">   <input onclick="sssss()" value="今天中午吃什么" type="button"/></div>
-</p>
+<div class="waikuan">
+
+<div class="big">
+<div id="showView" class="a"></div>
+<div id="submitt" class="b">   <input onclick="sssss()" value="今天中午吃什么" 
+
+type="button"/></div>
+</div>
+</div>
+
 </body>
 </html>
+
