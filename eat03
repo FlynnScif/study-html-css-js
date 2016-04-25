@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html >
+<html lang="zh-CN" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+<title>
+    今天中午吃什么
+</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    
+    
+<script type="text/javascript">
+var names=new Array("夫妻肺片","香肠泡饭","串串","冷锅鱼","牛肉面","排骨面","猪肝面","西湖醋鱼","东坡肉","宋嫂鱼","莼菜汤","蟹黄小笼包","龙抄手","酸辣土豆丝"); 
+function showName(){ 
+    var index = Math.floor(Math.random()*names.length); 
+    var name = names[index]; 
+    document.getElementById("showView").innerHTML = name; 
+    idd=setTimeout("showName()",50); 
+} 
+var state = true; 
+var idd; 
+function sssss(){ 
+    if(state){ 
+        showName(); 
+        state = false; 
+    } 
+    else{ 
+        clearTimeout(idd); 
+        state = true; 
+    } 
+         
+}</script>
+
+
+
+</head>
+<body >
+
+<div class="container">
+      <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" id="logindev">
+      <form class="form">
+        <h2 class="text-center">午饭吃什么</h2>
+
+<div id="showView" class="form-control text-center"></div>
+<input class="form-control" onclick="sssss()" value="今天中午吃什么" type="button"/>
+      </form>
+  </div>
+    </div> <!-- /container -->
+</body>
+</html>
