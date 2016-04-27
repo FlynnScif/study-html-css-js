@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html >
+<!DOCTYPE html >
 <html lang="zh-CN" >
 <head>
     <meta charset="utf-8">
@@ -46,15 +46,19 @@ function sssss(){
 
 
 </head>
-<body >
+<body sytle="backgroundcolor:orange">
 
-<div class="container">
+<div class="container" >
       <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2" id="logindev">
-      <form class="form">
-        <h2 class="text-center">午饭吃什么</h2>
+      <form class="form well" >
+        <div class="page-header ">
+        <h2 class="text-center">午饭吃什么</h2></div>
+
 
 <div id="showView" class="form-control text-center"></div>
-<input class="form-control" onclick="sssss()" value="今天中午吃什么" type="button"/>
+<p></p>
+<input class="form-control btn btn-default " onclick="sssss()" value="今天中午吃什么" type="button"/>
+
       </form>
   </div>
     </div> <!-- /container -->
